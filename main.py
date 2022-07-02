@@ -96,7 +96,7 @@ def main(stdscr):
     stdscr.clear()
 
     frames = gen_cake_frames()
-    while True:
+    for _ in range(25):
         for frame in frames:
             try:
                 stdscr.addstr(0, 0, frame)
